@@ -1,0 +1,598 @@
+    <!---experience section start-->
+
+    <section class="#experience" id="#experience">
+
+        <div class="content">
+            <span class="hi">hi there...</span>
+            <h3>i am <span>Jhon doe</span></h3>
+            <p class="info">i'm front-end web developer</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quia, voluptatum id dolores
+                alias facere eum doloribus! Ea qui iusto ratione voluptatibus sequi eum, error deserunt, tempore ad
+                facilis vitae?</p>
+            <a href="#education" class="btn">My Resume</a>
+        </div>
+
+        <!-- <div class="image">
+            <img src="images/Monirul.jpg" alt="">
+        </div> -->
+
+    </section>
+
+    <!---experience section end-->
+
+    <!---education section start-->
+
+    <section class="#education" id="#education">
+
+        <div class="content">
+            <span class="hi">hi there...</span>
+            <h3>i am <span>Jhon doe</span></h3>
+            <p class="info">i'm front-end web developer</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quia, voluptatum id dolores
+                alias facere eum doloribus! Ea qui iusto ratione voluptatibus sequi eum, error deserunt, tempore ad
+                facilis vitae?</p>
+            <a href="#education" class="btn">My Resume</a>
+        </div>
+
+        <!-- <div class="image">
+            <img src="images/Monirul.jpg" alt="">
+        </div> -->
+
+    </section>
+
+    <!---education section end-->
+
+
+
+
+ <!---about section start-->
+
+    <section class="about" id="about">
+
+        <h1 class="heading">about <span>me</span></h1>
+
+        <div class="row-1">
+
+            <div class="image">
+                <img src="images/about.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>my name is Jhon doe & i'm a front-end web developer</h3>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error modi exercitationem natus obcaecati,
+                    dolorum quia. Error ullam, laboriosam dolorum tempora cum porro aperiam dolor sunt aliquid vero
+                    maiores accusamus ad laborum, impedit, optio voluptas eligendi quibusdam? Tenetur temporibus eius
+                    ut.</p>
+                <div class="box-container">
+                    <div class="box">
+                        <p><span>age :</span> 25</p>
+                        <p><span>gender :</span> male</p>
+                        <p><span>language :</span> Japanese, English</p>
+                        <p><span>country :</span> Japan</p>
+                    </div>
+                    <div class="box">
+                        <p><span>freelance :</span> available </p>
+                        <p><span>phone :</span> +211-5255-782-450</p>
+                        <p><span>email :</span> johndoe@gmail.com</p>
+                        <p><span>work :</span> front-end developer</p>
+                    </div>
+                </div>
+                <a href="#" class="btn">download CV</a>
+                <a href="#contact" class="btn">hire me</a>
+            </div>
+
+        </div>
+
+        <h1 class="heading"><span>my</span> skills </h1>
+
+        <div class="row-2">
+            <div class="skills">
+                <div class="progress">
+                    <h3>web design <span> 95% </span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>web developement <span> 75% </span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>seo marketing <span> 80% </span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>UI design <span> 90% </span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+            </div>
+
+            <div class="box-container">
+
+                <div class="box">
+                    <h3> >>5+ </h3>
+                    <p>years of experience</p>
+                </div>
+                <div class="box">
+                    <h3> >> 250+ </h3>
+                    <p>happy client</p>
+                </div>
+                <div class="box">
+                    <h3> >> 550+ </h3>
+                    <p>projects completed</p>
+                </div>
+                <div class="box">
+                    <h3> >> 50+ </h3>
+                    <p>awards won</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!---about section end-->
+
+    <!---service section start-->
+
+    <section class="service" id="service">
+
+        <h1 class="heading"><span>Paid</span> services</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-code"></i>
+                <h3>web design</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, ipsum.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-brush"></i>
+                <h3>graphic design</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, ipsum.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-mobile"></i>
+                <h3>resonsive design</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, ipsum.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>seo marketing</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, ipsum.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-chart-line"></i>
+                <h3>digital design</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, ipsum.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3>email marketing</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, ipsum.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!---service section end-->
+
+    <!---experience section start-->
+
+    <section class="experience" id="experience">
+
+        <h1 class="heading"><span>My</span> experience</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="content">
+                    <span>2010 2012</span>
+                    <h3>front-end developement</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus reprehenderit fugit ea,
+                        consectetur nisi earum minima neque ad reiciendis voluptatum dolores autem cumque nihil
+                        distinctio laboriosam ipsam quis quaerat officia quam magni! Voluptas, assumenda quidem! Modi
+                        esse labore laborum aliquid ipsam repellendus beatae?</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <span>2010 2015</span>
+                    <h3>front-end developement</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus reprehenderit fugit ea,
+                        consectetur nisi earum minima neque ad reiciendis voluptatum dolores autem cumque nihil
+                        distinctio laboriosam ipsam quis quaerat officia quam magni! Voluptas, assumenda quidem! Modi
+                        esse labore laborum aliquid ipsam repellendus beatae? </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <span>2015 2017</span>
+                    <h3>front-end developement</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus reprehenderit fugit ea,
+                        consectetur nisi earum minima neque ad reiciendis voluptatum dolores autem cumque nihil
+                        distinctio laboriosam ipsam quis quaerat officia quam magni! Voluptas, assumenda quidem! Modi
+                        esse labore laborum aliquid ipsam repellendus beatae? </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <span>2017 2019</span>
+                    <h3>front-end developement</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus reprehenderit fugit ea,
+                        consectetur nisi earum minima neque ad reiciendis voluptatum dolores autem cumque nihil
+                        distinctio laboriosam ipsam quis quaerat officia quam magni! Voluptas, assumenda quidem! Modi
+                        esse labore laborum aliquid ipsam repellendus beatae? </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <span>2019 2020</span>
+                    <h3>front-end developement</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus reprehenderit fugit ea,
+                        consectetur nisi earum minima neque ad reiciendis voluptatum dolores autem cumque nihil
+                        distinctio laboriosam ipsam quis quaerat officia quam magni! Voluptas, assumenda quidem! Modi
+                        esse labore laborum aliquid ipsam repellendus beatae?</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <span>2020 2021</span>
+                    <h3>front-end developement</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus reprehenderit fugit ea,
+                        consectetur nisi earum minima neque ad reiciendis voluptatum dolores autem cumque nihil
+                        distinctio laboriosam ipsam quis quaerat officia quam magni! Voluptas, assumenda quidem! Modi
+                        esse labore laborum aliquid ipsam repellendus beatae?</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!---experience section end-->
+
+    <!---portfolio section start-->
+
+    <section class="portfolio" id="portfolio">
+        <h1 class="heading"><span>our</span> work</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/1.jpg" alt="">
+                <h3>project 01</h3>
+                <div class="icons">
+                    <a href="" class="fas fa-link"></a>
+                    <a href="" class="fas fa-share"></a>
+                    <a href="" class="fas fa-search"></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/2.jpg" alt="">
+                <h3>project 02</h3>
+                <div class="icons">
+                    <a href="" class="fas fa-link"></a>
+                    <a href="" class="fas fa-share"></a>
+                    <a href="" class="fas fa-search"></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/3.jpg" alt="">
+                <h3>project 03</h3>
+                <div class="icons">
+                    <a href="" class="fas fa-link"></a>
+                    <a href="" class="fas fa-share"></a>
+                    <a href="" class="fas fa-search"></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/4.jpg" alt="">
+                <h3>project 04</h3>
+                <div class="icons">
+                    <a href="" class="fas fa-link"></a>
+                    <a href="" class="fas fa-share"></a>
+                    <a href="" class="fas fa-search"></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/5.jpg" alt="">
+                <h3>project 05</h3>
+                <div class="icons">
+                    <a href="" class="fas fa-link"></a>
+                    <a href="" class="fas fa-share"></a>
+                    <a href="" class="fas fa-search"></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/6.jpg" alt="">
+                <h3>project 06</h3>
+                <div class="icons">
+                    <a href="" class="fas fa-link"></a>
+                    <a href="" class="fas fa-share"></a>
+                    <a href="" class="fas fa-search"></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    .about .row-1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.about .row-1 .image{
+    flex:  1 1 20rem;
+} 
+
+.about .row-1 .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 1rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+}
+
+.about .row-1 .content{
+    flex: 1 1 60rem;
+}
+
+.about .row-1 .content h3{
+    color: #333;
+    font-size: 3.5rem;
+}
+
+.about .row-1 .content p{
+    color: #666;
+    font-size: 1.7rem;
+    padding: .5rem 0;
+}
+
+.about .row-1 .content .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.about .row-1 .content .box-container .box{
+    flex:  1 1 20rem;
+}
+
+.about .row-1 .content .box-container .box span{
+    color: var(--main-color);
+}
+
+.about .row-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.about .row-2 .skills{
+    flex:  1 1 40rem;
+}
+
+.about .row-2 .skills .progress{
+    padding: 1rem 0;
+}
+
+.about .row-2 .skills .progress h3{
+    display: flex;
+    justify-content: space-between;
+    padding: .7rem 0;
+    font-size: 1.7rem;
+    color: #111;
+    font-weight: 400;
+}
+
+.about .row-2 .skills .progress .bar{
+    width: 100%;
+    background: #ccc;
+    overflow: hidden;
+    height: 1rem;
+    border-radius: 50rem;
+}
+
+.about .row-2 .skills .progress .bar span{
+    display: block;
+    height: 100%;
+    background: var(--main-color);
+    border-radius: 50rem;
+}
+
+.about .row-2 .skills .progress:nth-child(1) .bar span{
+    width: 95%;
+}
+
+.about .row-2 .skills .progress:nth-child(2) .bar span{
+    width: 75%;
+}
+
+.about .row-2 .skills .progress:nth-child(3) .bar span{
+    width: 80%;
+}
+
+.about .row-2 .skills .progress:nth-child(4) .bar span{
+    width: 90%;
+}
+
+
+.about .row-2 .box-container{
+    flex: 1 1 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.about .row-2 .box-container .box{
+   flex: 1 1 15rem; 
+   background: #fff;
+   padding: 2rem;
+   border-radius: .5rem;
+   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+.about .row-2 .box-container .box h3{
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+.about .row-2 .box-container .box p{
+    color: #666;
+    font-size: 1.7rem;
+    padding-top: .5rem;
+}
+
+.service .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.service .box-container .box{
+    flex: 1 1 30rem;
+    text-align: center;
+    padding: 5rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+}
+
+.service .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    color: #fff;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+
+.service .box-container .box h3{
+    color: #444;
+    font-size: 2.2rem;
+    padding-top: 1rem;
+}
+
+.service .box-container .box p{
+    color: #666;
+    font-size: 1.7rem;
+    padding-top: .5rem;
+}
+
+.experience .box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.experience .box-container .box{
+    position: relative;
+    flex: 1 1 33rem;
+    border-left: .2rem solid var(--main-color);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.experience .box-container .box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+
+.experience .box-container .box .content{
+    background: #fff;
+    padding: 1.5rem;
+    box-shadow:  0 .5rem 1rem rgba(0,0,0,0.1);
+    border-radius: .5rem;
+}
+
+.experience .box-container .box .content span{
+    color: #fff;
+    font-size: 1.7rem;
+    background: var(--main-color);
+    border-radius: 50rem;
+    padding: .4rem 1rem;
+}
+
+.experience .box-container .box .content h3{
+    font-size: 2.5rem;
+    padding: .5rem 0;
+    color: #111;
+}
+
+.experience .box-container .box .content p{
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.portfolio .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.portfolio .box-container .box{
+    flex: 1 1 30rem;
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+    border: 1rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+    background: #fff;
+    border-radius: .5rem;
+}
+
+.portfolio .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio .box-container .box:hover img{
+    height: 75%;
+    width: 75%;
+}
+
+.portfolio .box-container .box h3{
+    position: absolute;
+    bottom: .5rem;
+    left: 1rem;
+    font-size: 2.5rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.portfolio .box-container .box .icons{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.portfolio .box-container .box .icons a{
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: #333;
+    font-size: 1.7rem;
+    line-height: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.portfolio .box-container .box .icons a:hover{
+    background: var(--main-color);
+    color: #fff;
+}
