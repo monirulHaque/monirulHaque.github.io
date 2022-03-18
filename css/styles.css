@@ -229,6 +229,37 @@ header .follow a:hover{
     padding: .5rem 0;
 }
 
+.experience{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.experience .content{
+    flex:  1 1 40rem;
+}
+
+.experience .content h3{
+    font-size: 4rem;
+    color: var(--main-color);
+    /* color: #111; */
+}
+.experience .content span{
+    padding-left: 20em;
+    font-size: 1.7rem;
+    color: #111;
+}
+.experience .content h4{
+    font-size: 3rem;
+    color: #222;
+}
+
+.experience .content .responsibilities{
+    font-size: 1.7rem;
+    color: #666;
+    padding: .5rem 0;
+}
 
 .contact .icons-container{
     display: flex;
