@@ -433,3 +433,8 @@ header .follow a:hover{
     }
     
 }
+
+.period {
+    float: right;
+    padding-right: 20%;
+}
