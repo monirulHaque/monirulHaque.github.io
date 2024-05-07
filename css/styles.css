@@ -2,6 +2,9 @@
 
 :root{
     --main-color: #ff2828;
+    --text-color1: #111;
+    --text-color2: #333;
+    --text-color3: #555;
 }
 
 *{
@@ -23,7 +26,7 @@ html{
 }
 
 body{
-    background: #FFFDFD;
+    background: #f1f1f1;
     padding-left: 30rem;
     text-decoration: none;
 }
@@ -178,6 +181,9 @@ header .follow a:hover{
     display: none;
 }
 
+
+
+/* About section */
 .about{
     display: flex;
     align-items: center;
@@ -209,7 +215,7 @@ header .follow a:hover{
 
 .about .content h3{
     font-size: 4.5rem;
-    color: #111;
+    color: var(--text-color1);
 }
 
 .about .content h3 span{
@@ -225,13 +231,13 @@ header .follow a:hover{
 
 .about .content .text{
     font-size: 1.7rem;
-    color: #666;
+    color: var(--text-color3);
     padding: .5rem 0;
 }
 
 
 
-
+/* Experience section */
 .experience{
     display: flex;
     align-items: center;
@@ -249,14 +255,17 @@ header .follow a:hover{
     color: var(--main-color);
     /* color: #111; */
 }
-.experience .content .period{
-    margin-left: 5%;
+.experience .content .location{
     font-size: 1.6rem;
-    color: #111;
+    color: var(--text-color1);
+}
+.experience .content .duration{
+    font-size: 1.6rem;
+    color: var(--text-color2);
 }
 .experience .content h4{
     font-size: 3rem;
-    color: #222;
+    color: var(--text-color3);
 }
 
 .experience .content .responsibilities{
@@ -265,6 +274,9 @@ header .follow a:hover{
     padding: .5rem 0;
 }
 
+
+
+/* Education section */
 .education{
     display: flex;
     align-items: center;
