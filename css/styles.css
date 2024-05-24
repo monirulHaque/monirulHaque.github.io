@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root{
-    --main-color: #ff2828;
-    --text-color1: #111;
+    --bg-color: #eee;
+    --main-color: #e92222;
+    --main-color2: #f16666;
+    --text-color1: #151515;
     --text-color2: #333;
     --text-color3: #555;
 }
@@ -26,7 +28,7 @@ html{
 }
 
 body{
-    background: #f1f1f1;
+    background: var(--bg-color);
     padding-left: 30rem;
     text-decoration: none;
 }
@@ -34,7 +36,7 @@ body{
 .heading{
     font-size: 4rem;
     padding-bottom: 1rem;
-    color: #111;
+    color: var(--text-color1);
     text-transform: uppercase;
 }
 
@@ -59,7 +61,7 @@ section{
 }
 
 .btn:hover{
-    background: #f16666;
+    background: var(--main-color2);
     letter-spacing: .2rem;
 }
 
@@ -68,15 +70,15 @@ section{
 }
 
 ::-webkit-scrollbar-track{
-    background: #fce8e8;
+    background: var(--bg-color);
 }
 
 ::-webkit-scrollbar-thumb{
-    background: #f16666;
+    background: var(--main-color2);
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background-color: #ff2828;
+    background-color: var(--main-color);
 }
 
 header{
@@ -225,7 +227,7 @@ header .follow a:hover{
 
 .about .content .info{
     font-size: 2.5rem;
-    color: #111;
+    color: var(--text-color1);
     padding: .5rem 0;
 }
 
@@ -253,11 +255,14 @@ header .follow a:hover{
 .experience .content b{
     font-size: 4rem;
     color: var(--main-color);
-    /* color: #111; */
+    /* color: --text-color1; */
 }
 .experience .content .location{
     font-size: 1.6rem;
     color: var(--text-color1);
+}
+.experience .content .location .company {
+    font-weight: bold;
 }
 .experience .content .duration{
     font-size: 1.6rem;
@@ -288,28 +293,76 @@ header .follow a:hover{
     flex:  1 1 40rem;
 }
 
-.education .content b{
-    font-size: 4rem;
+.education .content .institute{
+    font-size: 3rem;
     color: var(--main-color);
-    /* color: #111; */
+    /* color: --text-color1; */
 }
 .education .content .period{
+    margin-top: 0.2rem;
     margin-left: 5%;
     font-size: 1.6rem;
-    color: #111;
+    color: var(--text-color1);
 }
 
-.education .content h4{
-    font-size: 2.5rem;
+.education .content .degree{
+    font-size: 2rem;
     color: #222;
 }
 
-.education .content h5{
-    font-size: 2rem;
-    color: #666;
+.education .content .grade{
+    font-size: 1.8rem;
+    color: var(--text-color3);
+    font-weight: bold;
     padding-bottom: 1rem;
 }
 
+
+/* skills section */
+.skills{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    /* span.cell input { width: 100%; display: block; } */
+}
+
+.skills .content{
+    flex:  1 1 40rem;
+}
+
+.skills .content .icon{
+    color: var(--main-color);
+    vertical-align: middle;
+    font-size: 1.8rem;
+}
+
+.skills .content .icon2 {
+    color: var(--main-color);
+    vertical-align: middle;
+    font-size: 1.5rem;
+}
+
+.skills .content .skillclass{
+    font-size: 1.6rem;
+    color: var(--text-color1);
+}
+
+.skills .content .skillpoints{
+    font-size: 1.5rem;
+    color: var(--text-color2);
+}
+
+.cv .pdf {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* span.cell input { width: 100%; display: block; } */
+}
 
 .contact .icons-container{
     display: flex;
@@ -322,7 +375,7 @@ header .follow a:hover{
     flex:1 1 25rem;
     text-align: center;
     padding:2rem;
-    background:#fff;
+    background:var(--bg-color);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     border-radius: .5rem;
 }
@@ -333,19 +386,19 @@ header .follow a:hover{
     line-height: 5rem;
     font-size: 2rem;
     background: var(--main-color);
-    color:#fff;
+    color:var(--bg-color);
     border-radius: 50%;
 }
 
 .contact .icons-container .icons h3{
-    color:#111;
+    color: var(--text-color1);
     font-size: 2rem;
     padding:.5rem 0;
     padding-top: 1rem;
 }
 
 .contact .icons-container .icons p{
-    color:#666;
+    color: var(--text-color3);
     font-size: 1.7rem;
 }
 
@@ -357,7 +410,7 @@ header .follow a:hover{
 
 .contact .row form{
     flex:1 1 55rem;
-    background:#fff;
+    background:var(--bg-color);
     padding:0 2rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     border-radius: .5rem;
@@ -365,7 +418,7 @@ header .follow a:hover{
 
 .contact .row .map{
     flex:1 1 25rem;
-    border:1rem solid #fff;
+    border:1rem solid var(--bg-color);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     border-radius: .5rem;
     width: 100%;
@@ -374,8 +427,8 @@ header .follow a:hover{
 .contact .row form .box,
 .contact .row form textarea{
     width: 100%;
-    border-bottom: .1rem solid #333;
-    color:#333;
+    border-bottom: .1rem solid var(--text-color2);
+    color:var(--text-color2);
     text-transform: none;
     font-size: 1.7rem;
     padding:1rem 0;
@@ -400,14 +453,18 @@ header .follow a:hover{
     margin-bottom: 1.5rem;
 }
 
+.period {
+    float: right;
+    padding-right: 20%;
+}
 
 .footer{
     margin-top: 2rem;
     font-size: 2rem;
     padding: 2.5rem;
     text-align: center;
-    color: #666;
-    background: #fff;
+    color: var(--text-color3);
+    background: var(--bg-color);
 }
 
 .footer span{
@@ -444,9 +501,4 @@ header .follow a:hover{
         display: none;
     }
     
-}
-
-.period {
-    float: right;
-    padding-right: 20%;
 }
