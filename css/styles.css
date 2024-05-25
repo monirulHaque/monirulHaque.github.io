@@ -4,6 +4,7 @@
     --bg-color: #eee;
     --main-color: #e92222;
     --main-color2: #f16666;
+    --main-color3: #e43939;
     --text-color1: #151515;
     --text-color2: #333;
     --text-color3: #555;
@@ -311,10 +312,83 @@ header .follow a:hover{
 }
 
 .education .content .grade{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: var(--text-color3);
     font-weight: bold;
     padding-bottom: 1rem;
+}
+
+
+/* research section */
+.research {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    /* span.cell input { width: 100%; display: block; } */
+}
+
+.research .publications h1{
+    flex:  1 1 40rem;
+    color: var(--text-color1);
+    font-size: 2.5rem;
+    padding-bottom: 2%;
+}
+
+.research .publications .title{
+    flex:  1 1 40rem;
+    color: var(--main-color);
+    font-size: 2rem;
+}
+
+.research .publications .paper{
+    flex:  1 1 40rem;
+    color: var(--text-color2); 
+    font-size: 1.3rem;
+}
+
+.research .publications .links{
+    flex:  1 1 40rem;
+    color: var(--text-color3);
+    font-size: 1.3rem;
+
+}
+
+.research .ongoing h1{
+    flex:  1 1 40rem;
+    color: var(--text-color1);
+    font-size: 2.5rem;
+    padding-bottom: 2%;
+}
+
+.research .ongoing .paperproject{
+    flex:  1 1 40rem;
+    padding-bottom: 1%;
+}
+
+.research .ongoing .paperproject .title{
+    color: var(--main-color3);
+    font-size: 1.8rem;
+}
+
+.research .ongoing .paperproject .title span{
+    color: var(--text-color1);
+    font-size: 1.3rem;
+}
+
+
+.research .ongoing .paperproject .description{
+    color: var(--text-color2);
+    font-size: 1.3rem;
+}
+
+/* projects section */
+.projects{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    /* span.cell input { width: 100%; display: block; } */
 }
 
 
