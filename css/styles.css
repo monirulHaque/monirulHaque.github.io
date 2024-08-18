@@ -391,6 +391,24 @@ header .follow a:hover{
     /* span.cell input { width: 100%; display: block; } */
 }
 
+.projects .content{
+    flex:  1 1 40rem;
+}
+
+.projects .content .singleproject .title{
+    font-size: 1.7rem;
+    color: var(--main-color2);
+}
+
+.projects .content .singleproject .technology{
+    font-size: 1.4rem;
+    color: var(--text-color2);
+}
+
+.projects .content .singleproject .technology{
+    font-size: 1rem;
+    color: var(--text-color3);
+}
 
 /* skills section */
 .skills{
