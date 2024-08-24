@@ -395,19 +395,25 @@ header .follow a:hover{
     flex:  1 1 40rem;
 }
 
-.projects .content .singleproject .title{
-    font-size: 1.7rem;
-    color: var(--main-color2);
+.projects .content .singleproject{
+    padding-bottom: 1%;
+}
+
+.projects .content .singleproject .title a{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--main-color3);
 }
 
 .projects .content .singleproject .technology{
-    font-size: 1.4rem;
-    color: var(--text-color2);
-}
-
-.projects .content .singleproject .technology{
-    font-size: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
     color: var(--text-color3);
+}
+
+.projects .content .singleproject .details{
+    color: var(--text-color2);
+    font-size: 1.3rem;
 }
 
 /* skills section */
