@@ -452,6 +452,17 @@ header .follow a:hover{
     padding: 0.3%
 }
 
+.achievements{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.achievements .content{
+    flex:  1 1 40rem;
+    font-size: 1.5rem;
+}
+
 .cv .pdf {
     display: flex;
     align-items: center;
