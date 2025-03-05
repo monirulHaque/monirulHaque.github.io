@@ -267,6 +267,7 @@ header .follow a:hover{
 }
 .experience .content .duration{
     font-size: 1.6rem;
+    font-style: italic;
     color: var(--text-color2);
 }
 .experience .content h4{
@@ -275,9 +276,22 @@ header .follow a:hover{
 }
 
 .experience .content .responsibilities{
+    /* list-style-type: none; */
     font-size: 1.7rem;
-    color: #666;
-    padding: .5rem 0;
+    color: var(--text-color3);
+    /* padding: .5rem 0; */
+}
+.experience .content .courses{
+    /* list-style-type: none; */
+    font-size: 1.3rem;
+    color: var(--text-color3);
+    padding: 0 0 1rem 3rem;
+}
+.experience .content .courses .courseName{
+    /* list-style-type: none; */
+    color: #517891;
+    font-size: 1.3rem;
+    /* color: var(--text-color3); */
 }
 
 
