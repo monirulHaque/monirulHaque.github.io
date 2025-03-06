@@ -2,12 +2,13 @@
 
 :root{
     --bg-color: #eee;
-    --main-color: #e92222;
-    --main-color2: #f16666;
-    --main-color3: #e43939;
+    --main-color: #e43333;
+    --main-color2: #da4040;
+    --main-color3: #f16666;
     --text-color1: #151515;
     --text-color2: #333;
     --text-color3: #555;
+    --link-color: #517891;
 }
 
 *{
@@ -62,7 +63,7 @@ section{
 }
 
 .btn:hover{
-    background: var(--main-color2);
+    background: var(--main-color3);
     letter-spacing: .2rem;
 }
 
@@ -75,7 +76,7 @@ section{
 }
 
 ::-webkit-scrollbar-thumb{
-    background: var(--main-color2);
+    background: var(--main-color3);
 }
 
 ::-webkit-scrollbar-thumb:hover{
@@ -100,7 +101,7 @@ header{
 
 header .logo{
     text-transform: uppercase;
-    color: #fff;
+    color: var(--bg-color);
     font-size: 3rem;
     font-weight: bolder;
 }
@@ -113,7 +114,7 @@ header .logo span{
 header .navbar a{
     display: block;
     font-size: 1.7rem;
-    color: #fff;
+    color: var(--bg-color);
     margin: 1.5rem 0;
     text-decoration: none;
 }
@@ -125,7 +126,7 @@ header .navbar a:hover{
 
 header .follow a{
     font-size: 2.5rem;
-    color: #fff;
+    color: var(--bg-color);
     margin: 0 .7rem;
 }
 
@@ -139,7 +140,7 @@ header .follow a:hover{
     right: 1rem;
     z-index: 10000;
     background: var(--main-color);
-    color: #fff;
+    color: var(--bg-color);
     padding: 1rem 1.5rem;
     font-size: 3rem;
     cursor: pointer;
@@ -202,7 +203,7 @@ header .follow a:hover{
     height: 500px;
     width: 380px;
     object-fit: cover;
-    border: 1rem solid #fff;
+    border: 1rem solid var(--bg-color);
     border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
 }
@@ -289,7 +290,7 @@ header .follow a:hover{
 }
 .experience .content .courses .courseName{
     /* list-style-type: none; */
-    color: #517891;
+    color: var(--link-color);
     font-size: 1.3rem;
     /* color: var(--text-color3); */
 }
@@ -342,6 +343,16 @@ header .follow a:hover{
     /* span.cell input { width: 100%; display: block; } */
 }
 
+.research .publications {
+    flex:  1 1 40rem;
+    padding-right: 15%;
+}
+@media (max-width: 768px) {
+    .research .publications {
+        padding-right: 2%; /* Reduced for mobile */
+    }
+}
+
 .research .publications h1{
     flex:  1 1 40rem;
     color: var(--text-color1);
@@ -365,7 +376,10 @@ header .follow a:hover{
     flex:  1 1 40rem;
     color: var(--text-color3);
     font-size: 1.3rem;
+}
 
+.research .publications .links .hlink{
+    color: var(--link-color);
 }
 
 .research .ongoing h1{
@@ -378,10 +392,16 @@ header .follow a:hover{
 .research .ongoing .paperproject{
     flex:  1 1 40rem;
     padding-bottom: 1%;
+    padding-right: 15%;
+}
+@media (max-width: 768px) {
+    .research .ongoing .paperproject {
+        padding-right: 2%; /* Reduced for mobile */
+    }
 }
 
 .research .ongoing .paperproject .title{
-    color: var(--main-color3);
+    color: var(--main-color2);
     font-size: 1.8rem;
 }
 
@@ -416,7 +436,7 @@ header .follow a:hover{
 .projects .content .singleproject .title a{
     font-size: 1.8rem;
     font-weight: bold;
-    color: var(--main-color3);
+    color: var(--main-color2);
 }
 
 .projects .content .singleproject .technology{
