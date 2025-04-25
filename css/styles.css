@@ -113,7 +113,7 @@ header .logo span{
 
 header .navbar a{
     display: block;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: var(--bg-color);
     margin: 1.5rem 0;
     text-decoration: none;
@@ -486,15 +486,168 @@ header .follow a:hover{
     padding: 0.3%
 }
 
-.achievements{
+.achievements {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
-.achievements .content{
-    flex:  1 1 40rem;
-    font-size: 1.5rem;
+
+.achievements .content {
+    flex: 1 1 40rem;
+}
+
+.achievements .content h1 {
+    color: var(--text-color1);
+    font-size: 2.5rem;
+    padding-bottom: 2%;
+}
+
+.achievements-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-left: 4px solid var(--main-color);
+}
+
+.achievement-icon {
+    margin-right: 2rem;
+    min-width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(228, 51, 51, 0.1);
+    border-radius: 50%;
+}
+
+.achievement-icon .material-symbols-outlined {
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+
+.achievement-details h3 {
+    font-size: 1.8rem;
+    color: var(--text-color1);
+    margin-bottom: 0.5rem;
+}
+
+.achievement-details p {
+    font-size: 1.4rem;
+    color: var(--text-color3);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .achievement-item {
+        padding: 1.2rem;
+    }
+    
+    .achievement-icon {
+        margin-right: 1.5rem;
+        min-width: 4rem;
+        height: 4rem;
+    }
+    
+    .achievement-icon .material-symbols-outlined {
+        font-size: 2rem;
+    }
+    
+    .achievement-details h3 {
+        font-size: 1.6rem;
+    }
+    
+    .achievement-details p {
+        font-size: 1.3rem;
+    }
+}
+
+/* Certifications section */
+.certifications {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.certifications .content {
+    flex: 1 1 40rem;
+}
+
+.certifications .content h1 {
+    color: var(--text-color1);
+    font-size: 2.5rem;
+    padding-bottom: 2%;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.certificate-item {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.certificate-item a {
+    display: block;
+    text-decoration: none;
+}
+
+.certificate-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.certificate-info {
+    padding: 1.5rem;
+}
+
+.certificate-info h3 {
+    font-size: 1.6rem;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+}
+
+.certificate-info p {
+    font-size: 1.3rem;
+    color: var(--text-color3);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .certificates-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
 }
 
 .cv .pdf {
