@@ -47,6 +47,56 @@ body{
     text-transform: uppercase;
 }
 
+/* Navbar active link styles with glow effect */
+header .navbar a.active-section {
+    color: var(--main-color);
+    letter-spacing: .1rem;
+    position: relative;
+    text-shadow: 0 0 10px rgba(228, 51, 51, 0.5);
+}
+
+/* Add a highlight effect with pseudo-element */
+header .navbar a.active-section::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background-color: var(--main-color);
+    box-shadow: 0 0 10px 1px var(--main-color);
+    border-radius: 2px;
+}
+
+/* Add a subtle animation for the glow effect */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px 1px var(--main-color);
+    }
+    30% {
+        box-shadow: 0 0 15px 2px var(--main-color);
+    }
+    60% {
+        box-shadow: 0 0 10px 1px var(--main-color);
+    }
+}
+
+header .navbar a.active-section::before {
+    animation: glow 2s infinite;
+}
+
+/* Only apply these effects on larger screens (PC) */
+@media (max-width: 991px) {
+    header .navbar a.active-section::before {
+        display: none;
+    }
+    
+    header .navbar a.active-section {
+        text-shadow: none;
+        font-weight: bold;
+    }
+}
+
 section{
     padding: 5rem 5%;
     min-height: 100vh;
