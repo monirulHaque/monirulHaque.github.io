@@ -348,40 +348,202 @@ header .follow a:hover{
 
 
 /* Education section */
-.education{
+.education {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.education .content {
+    flex: 1 1 40rem;
+}
+
+.education-timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--main-color), var(--main-color3));
+    border-radius: 1.5px;
+}
+
+.education-item {
+    position: relative;
+    background: #fff;
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid var(--main-color3);
+}
+
+.education-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.12);
+    border-left-color: var(--main-color);
+}
+
+.education-item::before {
+    content: '';
+    position: absolute;
+    left: -2.8rem;
+    top: 2rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: var(--main-color);
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 3px var(--main-color3);
+}
+
+.education-item .institute {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
-.education .content{
-    flex:  1 1 40rem;
-}
-
-.education .content .institute{
+.education-item .institute .education-icon {
     font-size: 2.5rem;
     color: var(--main-color);
-    /* color: --text-color1; */
 }
-.education .content .period{
-    margin-top: 0.2rem;
-    margin-left: 5%;
-    font-size: 1.6rem;
+
+.education-item .degree {
+    font-size: 1.8rem;
     color: var(--text-color1);
+    font-weight: 500;
+    margin-bottom: 0.8rem;
 }
 
-.education .content .degree{
-    font-size: 2rem;
-    color: #222;
+.education-item .period {
+    display: inline-block;
+    background: rgba(228, 51, 51, 0.1);
+    color: var(--main-color);
+    padding: 0.3rem 1rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
 }
 
-.education .content .grade{
-    font-size: 1.5rem;
+.education-item .grade {
+    font-size: 1.4rem;
     color: var(--text-color3);
-    font-weight: bold;
-    padding-bottom: 1rem;
+    font-weight: 600;
+    background: var(--bg-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    display: inline-block;
 }
+
+.education-item .grade .grade-label {
+    color: var(--text-color2);
+    font-weight: normal;
+}
+
+.education-item .description {
+    font-size: 1.4rem;
+    color: var(--text-color3);
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+.education-item .highlights {
+    margin-top: 1.2rem;
+}
+
+.education-item .highlights h4 {
+    font-size: 1.5rem;
+    color: var(--text-color2);
+    margin-bottom: 0.5rem;
+}
+
+.education-item .highlights ul {
+    list-style: none;
+    padding: 0;
+}
+
+.education-item .highlights li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.3rem;
+    font-size: 1.3rem;
+    color: var(--text-color3);
+}
+
+.education-item .highlights li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+/* Media queries for education section */
+@media (max-width: 768px) {
+    .education-timeline {
+        padding-left: 1.5rem;
+    }
+    
+    .education-item {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .education-item::before {
+        left: -2.3rem;
+        width: 1rem;
+        height: 1rem;
+    }
+    
+    .education-item .institute {
+        font-size: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .education-item .degree {
+        font-size: 1.6rem;
+    }
+    
+    .education-item .period {
+        font-size: 1.2rem;
+        padding: 0.2rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-timeline::before {
+        display: none;
+    }
+    
+    .education-item::before {
+        display: none;
+    }
+    
+    .education-item {
+        border-left: none;
+        border-top: 4px solid var(--main-color3);
+    }
+    
+    .education-timeline {
+        padding-left: 0;
+    }
+}
+
 
 
 /* research section */
