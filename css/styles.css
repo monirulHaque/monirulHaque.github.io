@@ -35,6 +35,10 @@ body{
     text-decoration: none;
 }
 
+a:link {
+  color: var(--link-color);
+}
+
 .heading{
     font-size: 2.5rem;
     padding-bottom: 1rem;
@@ -291,59 +295,305 @@ header .follow a:hover{
 
 
 
-/* Experience section */
-.experience{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    /* span.cell input { width: 100%; display: block; } */
+/* Experience Section */
+.experience {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.experience .content{
-    flex:  1 1 40rem;
+.experience .content {
+  flex: 1 1 40rem;
 }
 
-.experience .content b{
-    font-size: 3rem;
-    color: var(--main-color);
-    /* color: --text-color1; */
+/* Experience Item Styling */
+.experience-item {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid var(--main-color3);
+  position: relative;
 }
-.experience .content .location{
-    font-size: 1.6rem;
-    color: var(--text-color1);
+
+.experience-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.12);
+  border-left-color: var(--main-color);
 }
+
+.experience-item::before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  top: 2.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: var(--main-color);
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px var(--main-color3);
+}
+
+/* Job Title */
+.experience .content b {
+  font-size: 2.8rem;
+  color: var(--main-color);
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+/* Company and Location */
+.experience .content .location {
+  font-size: 1.8rem;
+  color: var(--text-color1);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .experience .content .location .company {
-    font-weight: bold;
-}
-.experience .content .duration{
-    font-size: 1.6rem;
-    font-style: italic;
-    color: var(--text-color2);
-}
-.experience .content h4{
-    font-size: 3rem;
-    color: var(--text-color3);
+  font-weight: 700;
+  color: var(--text-color1);
 }
 
+/* Duration Badge */
+.experience .content .duration {
+  background: linear-gradient(135deg, rgba(250, 221, 221, 0.15), rgba(228, 51, 51, 0.1));
+  color: var(--main-color3);
+  padding: 0.3rem 0.5rem;
+  border-radius: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 550;
+  display: inline-block;
+  margin: 0.2rem 0 0.2rem 0;
+  border: 1px solid rgba(228, 51, 51, 0.2);
+}
+
+/* Section Headers */
+.experience .content h4 {
+  font-size: 2.2rem;
+  color: var(--text-color2);
+  margin: 1.5rem 0 1rem 0;
+  font-weight: 600;
+  border-bottom: 2px solid var(--main-color3);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+/* Responsibilities */
 .experience .content .responsibilities{
-    /* list-style-type: none; */
-    font-size: 1.7rem;
-    color: var(--text-color3);
-    /* padding: .5rem 0; */
+/* background: linear-gradient(180deg, rgba(224, 180, 180, 0.075), rgba(228,51,51,.02)); */
+/* border: 0.3px solid rgba(228, 51, 51, 0.068); */
+/* border-left: 4px solid var(--main-color); */
+border-radius: .9rem;
+padding: 0.4rem 0rem;
+margin: 0 0 0 0;
+/* box-shadow: 0 .3rem .8rem rgba(0,0,0,.06); */
 }
-.experience .content .courses{
-    /* list-style-type: none; */
+
+
+/* Body text tweaks */
+.experience .content .responsibilities{
+font-size: 1.7rem;
+color: var(--text-color2);
+}
+.experience .content .responsibilities b,
+.experience .content .responsibilities strong{ color: var(--text-color1); }
+
+.experience .content .responsibilities .subtitle{
+display: inline-flex;
+align-items: center;
+gap: .45rem;
+font-weight: 550;
+text-transform: uppercase;
+letter-spacing: .04em;
+font-size: 1.2rem;
+color: var(--text-color1);
+background: #fff;
+border: 1px solid rgba(228,51,51,.32);
+border-radius: 2rem;
+padding: .2rem .9rem;
+margin-right: .1rem;
+margin-top: .9rem;
+}
+.experience .content .responsibilities .subtitle::before{
+content: "verified";
+font-family: 'Material Symbols Outlined';
+font-weight: normal;
+font-style: normal;
+font-size: 1.6rem;
+line-height: 1;
+}
+
+/* .experience .content .responsibilities ul{
+list-style: none;
+padding-left: 0;
+margin-top: .8rem;
+display: grid;
+grid-template-columns: 1fr;
+gap: .8rem;
+} */
+
+/* .experience .content .responsibilities {
+  font-size: 1.6rem;
+  color: var(--text-color3);
+  margin-bottom: 1.5rem;
+}
+
+.experience .content .responsibilities ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.experience .content .responsibilities li {
+  position: relative;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--text-color3);
+  padding-left: 2rem;
+  line-height: 1.6;
+}
+
+.experience .content .responsibilities li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 1.2rem;
+} */
+
+/* Courses Section */
+.experience .content ul{
+  /* background: linear-gradient(135deg, rgba(228, 51, 51, 0.05), rgba(228, 51, 51, 0.02)); */
+  /* padding: 1.5rem; */
+  /* border-radius: 0.8rem; */
+  /* border: 1px solid rgba(228, 51, 51, 0.1); */
+  margin-top: 1rem;
+  margin-left: 3rem;
+  font-size: 1.4rem;
+  color: var(--text-color3);
+}
+
+.experience .content .courses .courseName {
+  color: var(--link-color);
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin: 0.1rem 0 0.1rem 0.2rem;
+  padding: 0.1rem 0.1rem;
+  border-radius: 0.4rem;
+  background: rgba(255, 255, 255, 0);
+}
+
+.experience .content .courses .courseName:hover {
+  color: var(--main-color);
+  background: rgba(228, 51, 51, 0.1);
+  transform: translateX(3px);
+}
+
+/* Timeline Effect */
+.experience-timeline {
+  position: relative;
+  padding-left: 3rem;
+}
+
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, var(--main-color), var(--main-color3));
+  border-radius: 1.5px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .experience {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .experience .content {
+    flex: 1 1 100%;
+  }
+  
+  .experience-timeline {
+    padding-left: 0;
+  }
+  
+  .experience-timeline::before {
+    display: none;
+  }
+  
+  .experience-item {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-left: none;
+    border-top: 4px solid var(--main-color3);
+  }
+  
+  .experience-item::before {
+    display: none;
+  }
+  
+  .experience .content b {
+    font-size: 2.2rem;
+  }
+  
+  .experience .content .location {
+    font-size: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+  
+  .experience .content .duration {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 1rem 0;
+  }
+  
+  .experience .content h4 {
+    font-size: 1.8rem;
+  }
+  
+  .experience .content .responsibilities {
+    font-size: 1.4rem;
+  }
+  
+  .experience .content .responsibilities li {
     font-size: 1.3rem;
-    color: var(--text-color3);
-    padding: 0 0 1rem 3rem;
+  }
 }
-.experience .content .courses .courseName{
-    /* list-style-type: none; */
-    color: var(--link-color);
-    font-size: 1.3rem;
-    /* color: var(--text-color3); */
+
+@media (max-width: 480px) {
+  .experience-item {
+    padding: 1.5rem;
+  }
+  
+  .experience .content b {
+    font-size: 2rem;
+  }
+  
+  .experience .content .location {
+    font-size: 1.4rem;
+  }
+  
+  .experience .content h4 {
+    font-size: 1.6rem;
+  }
 }
+
 
 
 
