@@ -258,8 +258,49 @@ header .follow a:hover{
     width: 380px;
     object-fit: cover;
     border: 1rem solid var(--bg-color);
-    border-radius: .5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add hover effect */
+.about .image img:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 1.5rem 3rem rgba(228, 51, 51, 0.2);
+    border-color: rgba(228, 51, 51, 0.3);
+}
+
+/* Add a subtle overlay effect */
+.about .image {
+    position: relative;
+    display: inline-block;
+}
+
+.about .image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, transparent 0%, rgba(228, 51, 51, 0.1) 100%);
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.about .image:hover::before {
+    opacity: 1;
+}
+
+/* Ensure image stays below overlay */
+.about .image img {
+    position: relative;
+    z-index: 0;
 }
 
 .about .content{
