@@ -1874,6 +1874,12 @@ gap: .8rem;
     background: var(--bg-color);
 }
 
+.footer img{
+   display: inline-block;
+   height: auto;
+   max-width: 10%;
+}
+
 .footer span{
     color: var(--main-color);
 }
